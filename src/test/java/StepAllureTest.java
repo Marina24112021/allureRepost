@@ -15,7 +15,7 @@ public class StepAllureTest extends TestBase {
     @Owner("chenm")
     @Severity(SeverityLevel.BLOCKER)
     @Link(value = "text-box", url = "https://demoqa.com")
-    @DisplayName("Test address field check using allure report")
+    @DisplayName("Test address field check using allure report (lambda Step)")
     @Test
     void lambdaStepTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
@@ -34,6 +34,12 @@ public class StepAllureTest extends TestBase {
             $("#output #currentAddress").shouldHave(text(address));
         });
     }
+    @Feature("Feature lable")
+    @Story("Fill address field")
+    @Owner("chenm")
+    @Severity(SeverityLevel.BLOCKER)
+    @Link(value = "text-box", url = "https://demoqa.com")
+    @DisplayName("Test address field check using allure report (annotation @STEP)")
     @Test
     void annotatedStepTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
