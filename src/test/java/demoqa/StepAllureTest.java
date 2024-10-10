@@ -1,3 +1,5 @@
+package demoqa;
+
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.*;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -10,6 +12,7 @@ import static io.qameta.allure.Allure.step;
 
 public class StepAllureTest extends TestBase {
     private final String address = "USA";
+
     @Feature("Feature lable")
     @Story("Fill address field")
     @Owner("chenm")
@@ -34,6 +37,7 @@ public class StepAllureTest extends TestBase {
             $("#output #currentAddress").shouldHave(text(address));
         });
     }
+
     @Feature("Feature lable")
     @Story("Fill address field")
     @Owner("chenm")
