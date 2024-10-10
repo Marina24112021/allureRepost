@@ -13,7 +13,6 @@ import static org.openqa.selenium.By.linkText;
 
 public class AllureForIssueTest extends TestBaseGitHub {
     private static final String nameOfRepo = "Marina24112021/allureRepost";
-
     @Feature("Feature lable")
     @Story("Check of existing issue tab in github ")
     @Owner("chenmarina")

@@ -42,9 +42,7 @@ public class StepAllureGitTest extends TestBaseGitHub {
         step("Issue 2 should be exist", () -> {
             $("#issue_2").shouldHave(text("Issue2"));
         });
-
     }
-
     @Feature("Feature lable")
     @Story("Check of existing issue tab in github ")
     @Owner("chenmarina")

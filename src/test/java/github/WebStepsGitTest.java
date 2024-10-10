@@ -32,7 +32,6 @@ public class WebStepsGitTest extends TestBaseGitHub {
     void clickOnIssueTab() {
         $("a#issues-tab").click();
     }
-
     @Step("Issue 2 should be exist")
     void shouldBeIssue2() {
         $("#issue_2").shouldHave(text("Issue2"));

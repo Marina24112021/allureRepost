@@ -13,7 +13,6 @@ public class TestBaseGitHub {
         Configuration.baseUrl = "https://github.com";
         Configuration.pageLoadStrategy = "eager";
     }
-
     @AfterEach
     void afterEach() {
         Selenide.closeWebDriver();
