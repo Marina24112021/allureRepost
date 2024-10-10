@@ -16,7 +16,7 @@ public class AllurePracticeTest extends TestBase {
     @Link(value = "text-box", url = "https://demoqa.com")
     @DisplayName("Test address field check using allure report")
     @Test
-    void shouldIssueNumExist() {
+    void shouldIssueNumExistTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         open("/text-box");
         executeJavaScript("$('#fixedban').remove()");
